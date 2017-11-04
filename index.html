@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>My life My trip</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    
+    <!--導覽列-->
+    <nav class="navbar-fixed-top my-nav navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="my-title">
+            <a class="navbar-brand" href="#"><img class="profile" src="img/my-avatar.png" alt="My Personal Site"><span class="my-ti"><font size="4">My life my trip</font></span></a>
+          </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="pull-right nav navbar-nav">
+            <li><a class="btn btn-md" href="#back to top" role="button"><span class="glyphicon glyphicon-arrow-up" "></span> Top</a></li>
+            <li><a class="btn btn-md" href="#my-map-stories" role="button"><span class="glyphicon glyphicon-globe" ""></span> My maps</a></li>
+            <li><a class="btn btn-md" href="#about-me" role="button"><span class="glyphicon glyphicon-user" "></span> About me</a></li>
+          </ul>
+        </div>
+
+
+      </div>
+    </nav>
+
+    <!--照片輪播-->
+    <div class="container coverflow">
+      <div id="back to top">
+        <div id="照片" class="carousel slide" data-ride="carousel">
+        
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#照片" data-slide-to="0" class="active"></li>
+            <li data-target="#照片" data-slide-to="1"></li>
+            <li data-target="#照片" data-slide-to="2"></li>
+            <li data-target="#照片" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slide -->
+          <div class="carousel-inner" role="listbox">
+
+            <div class="item active">
+              <a href="#my-map-stories">
+                <img src="img/hawaii.png" alt="...">
+                <div class="carousel-caption">
+                  <h4>Hawaii</h4>
+                    <p>Diamond head</p>
+                    <p>2017, August.</p> 
+                </div></a>
+            </div>
+
+            <div class="item">
+              <a href="#my-map-stories">
+                <img src="img/japan.png" alt="...">
+                <div class="carousel-caption">
+                  <h4>Japan</h4>
+                    <p>Niigata, Naeba</p>
+                    <p>2017, February</p> 
+                </div></a>
+            </div>
+
+            <div class="item">
+              <a href="#about-me">
+                <img src="img/cambodia.png" alt="...">
+                <div class="carousel-caption">
+                  <h4>Cambodia</h4>
+                    <p>Angkor Wat, Banteay Srei</p>
+                    <p>2010, September</p>
+                </div></a>
+            </div>
+
+            <div class="item">
+              <a href="#about-me">
+                <img src="img/srilanka.png" alt="...">
+                <div class="carousel-caption">
+                  <h4>Sri Lanka</h4>
+                    <p>Sigiriya</p>
+                    <p>2016, September</p>
+                </div></a>
+            </div>
+
+          </div>
+        <!-- Controls -->
+          <a class="left carousel-control" href="#照片" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">上一張</span>
+          </a>
+          <a class="right carousel-control" href="#照片" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">下一張</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function(){
+        $('.coverflow').css('max-width',$('.coverflow img').width());
+      });
+    </script>
+    
+    <!--My Work-->
+    <hr class="bar">
+    <div id="my-map-stories">
+      <h1 class="text-center" id="work">My maps</h1>
+      <h4 class="text-center">Click and check out some nice spot and information I want to share with you!!</h4>
+      <div class="container">
+        <div class="row">
+          <div id="my-work">
+            <div id="my-work-gallery">
+              <div class="item-g">
+                <img src="img2/hawaii.jpg" width="100%" alt="My Personal Site"> 
+                <div class="item-info">
+                  <a href="link/hawaii.html" style="color:black;"><h3>Hawaii</h3></a>
+                  <p>Aloha!!</p>
+                  <a href="https://www.nps.gov/puho/index.htm" target="_blank"><img class="little-icon" src="icon/hawaii/mask.png" width="40" alt="..."></a>
+                  <a href="http://www.travelchannel.com/interests/beaches/photos/top-10-hawaiian-beaches" target="_blank"><img class="little-icon" src="icon/hawaii/island-with-palm-trees.png" width="40" alt="..."></a>
+                  <a href="https://www.doleplantation.com/" target="_blank"><img class="little-icon" src="icon/hawaii/pineapple.png" width="40" alt="..."></a>
+                  <a href="https://www.gohawaii.com/experiences/adventure/surfing" target="_blank"><img class="little-icon" src="icon/hawaii/surfing.png" width="40" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/japan.jpg" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/japan.html" style="color:black;"><h3>Japan</h3></a>
+                  <p>こんばんは!!</p>
+                  <a href="https://www.insidejapantours.com/japanese-culture/cherry-blossom/" target="_blank"><img class="little-icon" src="icon/japan/cherry-blossom.png" width="40" alt="..."></a>
+                  <a href="https://www.timeout.com/tokyo/restaurants/best-sushi-in-tokyo-10-top-picks" target="_blank"><img class="little-icon" src="icon/japan/sushi-and-chopsticks.png" width="40" alt="..."></a>
+                  <a href="https://www.japan-guide.com/e/e2058.html" target="_blank"><img class="little-icon" src="icon/japan/torii-gate.png" width="40" alt="..."></a>
+                  <a href="http://www.origami-fun.com/japanese-origami.html" target="_blank"><img class="little-icon" src="icon/japan/origami-crane.png" width="40" alt="..."></a>
+                </div> 
+              </div>
+              <div class="item-g">
+                <img src="img2/srilanka.jpg" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/srilanka.html" style="color:black;"><h3>Sri Lanka</h3></a>
+                  <p>ආයුබෝවන්!!</p>
+                  <a href="http://www.pureceylontea.com/" target="_blank"><img class="little-icon" src="icon/srilanka/teapot.png" width="40" alt="..."></a>
+                  <a href="http://nationalzoo.gov.lk/elephantorphanage/" target="_blank"><img class="little-icon" src="icon/srilanka/elephant-facing-right.png" width="50" alt="..."></a>
+                  <a href="https://www.lonelyplanet.com/sri-lanka/things-to-do/temples-in-sri-lanka" target="_blank"><img class="little-icon" src="icon/srilanka/buddhist-temple-icon-by-Vexels.png" width="40" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/malaysia.JPG" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/malaysia.html" style="color:black;"><h3>Malaysia</h3></a>
+                  <p>Apa khabar!!</p>
+                  <a href="http://www.westonwetlandpark.com/" target="_blank"><img class="little-icon" src="icon/malaysia/monkey-facing-right.png" width="40" alt="..."></a>
+                  <a href="http://www.mountkinabalu.com/" target="_blank"><img class="little-icon" src="icon/malaysia/mountain-summit.png" width="40" alt="...">
+                  <a href="https://www.eatbah.com/50-kota-kinabalu-must-eat-foods/" target="_blank"><img class="little-icon" src="icon/malaysia/soup.png" width="40" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/guam.JPG" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/guam.html" style="color:black;"><h3>Guam</h3></a>
+                  <p>Hafa Adai!!</p>
+                  <a href="http://theguamguide.com/where-to-take-the-plunge-adrenaline-junkies-and-gopros-only/" target="_blank"><img class="little-icon" src="icon/guam/shaka-sign.png" width="40" alt="..."></a>
+                  <a href="http://www.visitguam.com/things-to-do/shopping/" target="_blank"><img class="little-icon" src="icon/guam/shopper-with-bags.png" width="40" alt="..."></a>
+                  <a href="http://theguamguide.com/latte-stone-park/" target="_blank"><img class="little-icon" src="icon/guam/lattestone.png" width="25" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/myanmar.JPG" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/myanmar.html" style="color:black;"><h3>Myanmar</h3></a>
+                  <p>မင်္ဂလာပါ။!!</p>
+                  <a href="http://dietmartemps.com/travel-blog/monks-and-novices-in-myanmar-the-buddhism-way-of-life_512/" target="_blank"><img class="little-icon" src="icon/myanmar/buddha-statue.png" width="40" alt="..."></a>
+                  <a href="https://www.shwedagonpagoda.com/" target="_blank"><img class="little-icon" src="icon/myanmar/uppatasanti-pagoda.png" width="40" alt="..."></a>
+                  <a href="http://www.myanmartours.us/destinations/bagan/ba-attractions/thatbyinnyu-pagoda/" target="_blank"><img class="little-icon" src="icon/myanmar/thatbyinnyu-temple-myanmar-birmania.png" width="40" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/korea.JPG" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/korea.html" style="color:black;"><h3>Korea</h3></a>
+                  <p>안녕하세요!!</p>
+                  <a href="https://www.buzzfeed.com/michelleno/foods-every-korean-loves?utm_term=.nr3GONoqq9#.idp4Kv8wwo" target="_blank"><img class="little-icon" src="icon/korea/noodles.png" width="40" alt="..."></a>
+                  <a href="http://www.koreataekwondoaz.com/" target="_blank"><img class="little-icon" src="icon/korea/taekwondo-couple-silhouettes.png" width="40" alt="..."></a>
+                  <a href="https://www.britannica.com/list/beyond-the-cabbage-10-types-of-kimchi" target="_blank"><img class="little-icon" src="icon/korea/salad.png" width="40" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/hongkong.JPG" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/hongkong.html" style="color:black;"><h3>Hong Kong</h3></a>
+                  <p>你好!!</p>
+                  <a href="http://www.lifestyleasia.com/518332/10-must-order-mooncakes-mid-autumn-festival-2017/" target="_blank"><img class="little-icon" src="icon/hongkong/mooncake.png" width="35" style="padding-right: 5px;" alt="..."></a>
+                  <a href="http://www.hong-kong-traveller.com/hong-kong-new-year.html" target="_blank"><img class="little-icon" src="icon/hongkong/fireworks-.png" width="40" alt="..."></a>
+                  <a href="http://edition.cnn.com/travel/article/best-hong-kong-dim-sum/index.html" target="_blank"><img class="little-icon" src="icon/hongkong/dim_sum.png" width="40" style="padding-left: 5px;" alt="..."></a>
+                </div>
+              </div>
+              <div class="item-g">
+                <img src="img2/cambodia.JPG" width="100%" alt="My Personal Site">
+                <div class="item-info">
+                  <a href="link/cambodia.html" style="color:black;"><h3>Cambodia</h3></a>
+                  <p>ជំរាបសួរ!!</p>
+                  <a href="http://www.telegraph.co.uk/food-and-drink/features/20-strange-foods-to-try-before-you-die/fried-spiders-cambodia/" target="_blank"><img class="little-icon" src="icon/cambodia/spider.png" width="40" alt="..."></a>
+                  <a href="https://www.lonelyplanet.com/cambodia/travel-tips-and-articles/angkor-what-getting-to-know-cambodias-most-iconic-temple/40625c8c-8a11-5710-a052-1479d2779f60" target="_blank"><img class="little-icon" src="icon/cambodia/angkor-wat.png" width="40" alt="..."></a>
+                  <a href="https://www.cambodiauncovered.com/cambodia/palmtrees.html" target="_blank"><img class="little-icon" src="icon/cambodia/yard-tree.png" width="40" alt="..."></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+
+    <!--about me-->
+    <hr class="bar">
+    <div id="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <div padding-left="10px">
+              <iframe src="http://csle108.maps.arcgis.com/apps/SummaryViewer/index.html?appid=91beabd529b3401ca91c53346fd54556" width="100%" height="480"></iframe>
+              <p>The map show the spot I have been to, each circle number show the cluster of the spot number.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+            <h1>About me</h1>
+            <img class="profile-1" src="img/me.jpg"><p><font size="4"><strong>Huei Yi Cheng</strong></font></p>
+            <h4>love travel, has great interest in GIS and has passion to learn new technology.</h4>
+              <table class="table my-table table-striped table-hover">
+                <tr>
+                  <td>Birth</td>
+                  <td>1990</td>
+                </tr>
+                <tr>
+                  <td>Education background</td>
+                  <td>
+                    National Taiwan University, 
+                    Master's degree, civil engineering<br>
+                    September, 2013 ~ August, 2015<br><br>
+                    National Taiwan University, 
+                    Bachelor's degree, geography<br>
+                    September, 2008 ~ June, 2012 
+                  </td>
+                </tr>
+                <tr>
+                  <td>Skill</td>
+                  <td>ArcGIS, Python, HTML, CSS, Data processing</td>
+                </tr>
+                <tr>
+                  <td>Work Experience</td>
+                  <td>
+                    GIS engineer, Project manager and Developer<br>
+                    2 years+ in <a href="http://www.igis.com.tw/" target="_blank">Interactive Digital Technologies</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Project Execution</td>
+                  <td>
+                    <ul>
+                      <li>
+                        <div class="pro-me">
+                          Agricultural GIS Data Sharing and Integrating Platform Implementation
+                        </div>
+                        <div class="ans-me">
+                          Time:<br>
+                          May, 2016 ~ now<br><br>
+                          Client:<br>
+                          The Council of Agriculture Executive Yuan R.O.C(COA)<br><br>
+                          The Goal of this project:<br>
+                          -Develop an improve processing of checking cadastral map quality.<br>
+                          -Create add value cadastral map to serve on the COA platform.<br>
+                          -Create a GIS platform to show the COA's 2016 survey result in farm land and let people to query by cadastral attribute.<a href="https://map.coa.gov.tw/farmland/survey.html" target="_blank">Project result</a>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="pro-me">
+                          Taiwan Earthquake impact Research and Information Application platform(TERIA)
+                        </div>
+                        <div class="ans-me">
+                          Time:<br>
+                          April, 2016 ~ January, 2017<br><br>
+                          Client:<br>
+                          National Science and Technology Center for Disaster Reduction(NCDR)<br><br>
+                          The Goal of this project:<br>
+                          -Develop a system to simulate the damage when an earthquake happens.
+                        </div>
+                      </li>
+                      <li>
+                        <div class="pro-me">
+                          Taoyuan City Government open data platform
+                        </div>
+                        <div class="ans-me">
+                          Time:<br>
+                          April, 2016 ~ August, 2016<br><br>
+                          Client:<br>
+                          Taoyuan City Government R.O.C<br><br>
+                          The Goal of this project:<br>
+                          -Develop an open data website to let user to find, preview and download the data they have interest.<a href="http://data-tycg.opendata.arcgis.com/" target="_blank">Project result</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <script type="text/javascript">
+                $("li").click(
+                  function() {
+                  //toggle 像電燈般開闔物件
+                    $(this).find(".ans-me").toggle();
+                  }
+                );
+              </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Contact me
+    <h1 class="text-center">Contact me</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <form>
+            <div class="form-group">
+              <label for="name">姓名</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message">訊息</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+              <p class="help-block">請留言</p>
+            </div>
+            <button type="reset" class="btn btn-danger">重設</button>
+            <button type="submit" class="btn btn-primary">提交</button>
+          </form>
+        </div>
+      </div>
+    </div>
+-->
+
+  </body>
+</html>
