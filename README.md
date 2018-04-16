@@ -5,7 +5,7 @@
 ![image](https://github.com/iceland101113/My-travel-map-website/blob/master/%E5%9C%96%E7%89%87%2055.png)
 
 該國家主要的景點(點選國家名稱連至該國家景點分布的GOOGLE MAP頁面)
-![image](https://github.com/iceland101113/My-travel-map-website/blob/master/hawaii.png)
+![image](https://github.com/iceland101113/My-travel-map-website/blob/master/hawaii1.png)
 
 我的個人資訊
 ![image](https://github.com/iceland101113/My-travel-map-website/blob/master/hawaii.png)
