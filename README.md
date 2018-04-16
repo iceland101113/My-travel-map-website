@@ -8,7 +8,7 @@
 ![image](https://github.com/iceland101113/My-travel-map-website/blob/master/hawaii1.png)
   
 我的個人資訊  
-![image](https://github.com/iceland101113/My-travel-map-website/blob/master/hawaii.png)
+![image](https://github.com/iceland101113/My-travel-map-website/blob/master/me.png)
   
 ## 撰寫方式  
 ruby on rails, html, css, 一點點jquery  
